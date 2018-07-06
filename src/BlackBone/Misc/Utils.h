@@ -91,6 +91,13 @@ public:
     BLACKBONE_API static std::wstring GetErrorDescription( NTSTATUS code );
 
     /// <summary>
+    /// Get system error description
+    /// </summary>
+    /// <param name="code">The code.</param>
+    /// <returns>Error message</returns>
+    BLACKBONE_API static std::string GetErrorDescriptionA(NTSTATUS code);
+
+    /// <summary>
     /// Check if file exists
     /// </summary>
     /// <param name="path">Full-qualified file path</param>
